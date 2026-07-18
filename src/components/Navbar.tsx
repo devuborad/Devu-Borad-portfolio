@@ -59,16 +59,16 @@ export default function Navbar() {
   };
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 flex justify-center px-4 pt-4 sm:pt-6">
+    <div className="fixed top-4 left-0 right-0 z-50 flex justify-center px-4 w-full pointer-events-none">
       <motion.nav
         id="navbar"
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
-        className={`flex items-center justify-between transition-all duration-300 rounded-full bg-white/5 backdrop-blur-xl border border-white/10 shadow-2xl ${
+        className={`pointer-events-auto flex items-center justify-between w-full mx-auto rounded-full border transition-all duration-500 backdrop-blur-md ${
           scrolled
-            ? "w-full max-w-2xl px-5 py-2.5 sm:py-3 shadow-red-950/20"
-            : "w-full max-w-5xl px-6 sm:px-8 py-3 sm:py-4"
+            ? "max-w-5xl bg-black/75 py-2.5 px-6 navbar-glow-scrolled"
+            : "max-w-6xl bg-black/40 py-4 px-8 navbar-glow-unscrolled"
         }`}
       >
         {/* Logo / Name Initials */}
