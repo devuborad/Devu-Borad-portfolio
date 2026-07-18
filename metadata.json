@@ -1,0 +1,6 @@
+{
+  "name": "Devu Borad - Portfolio",
+  "description": "Glassmorphic personal portfolio for Devu Borad, Computer Science Engineering student, featuring custom animations and a dark red theme.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
